@@ -53,16 +53,34 @@
     
  .main{
    flex: 70%;
-   background-color: wolf-grey;
+   background-color: purple;
    padding: 20px;
       }
       
  .side{
    flex: 30%;
-   background-color: off-white;
+   background-color: green;
    padding: 20px;
       }
-
+      
+      
+ .footer {
+   padding: 20px;
+   text-align: center; 
+   background: grey;
+      }
+      
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+     }
+   }
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+    }
+  }
    
     </style>
   </head>
@@ -81,6 +99,12 @@
   <div class="main"> </div>
   <div class="side"> </div> 
     </div>
+ 
+<div class="footer">
+  <h2> Footer </h2>
+    </div>
+    
+ 
 
   </body>
   
