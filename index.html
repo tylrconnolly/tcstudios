@@ -11,7 +11,7 @@ body {
  background-color: #2FF3E0;
  margin: 0px
 }
-        
+/* Header Section */       
 .header {
  padding: 80px;
  text-align: center;
@@ -23,7 +23,31 @@ body {
  color: #F8D210;
  -webkit-text-stroke: 1px #F51720;
  
-
+/* Navigation Bar */
+#navbar {
+ overflow: hidden;
+ background-color: #F8D210;
+ background-opacity: 75%;
+}
+#navbar a {
+ float: left;
+ padding: 14px;
+ display: block;
+ text-align: center;
+ color: black;
+ text-decoration: none;
+}
+.content {
+ padding: 16px;
+}
+.sticky {
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+.stick + .content {
+ padding-top: 60px;
+}
         
       
 </style>
@@ -35,6 +59,13 @@ body {
  <h1 class="brand-name"> TC STUDIOS </h1>
  <h3 class="slogan"> Entertainment.Gaming.Design. </h3>
 </div> <!-- Closes Header Element -->
+ 
+<div id="navbar">
+ <a href="#home">Home</a>
+ <a href="#about">About</a>
+ <a href="#contact">Contact</a>
+</div> <!-- Closes Navbar Element -->
+ 
    
  
  
