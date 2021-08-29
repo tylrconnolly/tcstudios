@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title> Home - TC STUDIOS </title>
+<title> TC STUDIOS </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -25,11 +25,16 @@ body {
  text-shadow: 2px 2px black;
 }
 
-.navbar {
+.navbar::before {
  overflow: hidden;
  background-color: black;
-}
-.navbar a {
+ }
+ 
+ #logo::before {
+  float: left;
+ }
+
+ .navbar a::after {
  float: center;
  padding: 14px;
  display: block;
@@ -38,13 +43,6 @@ body {
  text-decoration: none;
 }
  
-#logo::before {
- float: left;
- }
- 
-#nav::after {
- float: center;
- }
  
 .about {
  padding: 20px;
