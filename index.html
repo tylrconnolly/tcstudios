@@ -24,17 +24,18 @@ body {
  background-color: black;
  }
  
- #logo {
+ .navbar logo {
   float: left;
  }
 
- #nav {
- float: center;
- padding: 14px;
- display: block;
+ .navbar ul {
+ margin: 0px;
+ padding: 0px;
+ display: inline-block;
  text-align: center;
  color: #DAA520;
  text-decoration: none;
+ vertical-align: top;
 }
  
  
@@ -81,16 +82,18 @@ body {
   
 <body>
   
-<nav class="navbar">
- <div class="logo">
-    <a href='https://postimg.cc/68g36Qdg' target='_blank'><img src='https://i.postimg.cc/68g36Qdg/TC-Studios-Enclosed-Black-Gold-BCG.png' border='0' alt='TC-Studios-Enclosed-Black-Gold-BCG'/></a>
- </div> <!-- Closes Logo Element -->
- <div class="nav">
- <a href="#home">Home</a>
- <a href="#about">About</a>
- <a href="#projects">Projects</a>
- <a href="#contact">Contact</a>
+<div class="navbar">
+ <div id="navigation-container">
+   <img src='https://i.postimg.cc/68g36Qdg/TC-Studios-Enclosed-Black-Gold-BCG.png' border='0' alt='TC-Studios-Enclosed-Black-Gold-BCG'/>
+   <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
  </div>
+ </div>
+
 </nav> <!-- Closes Navbar Element --> 
  
 
