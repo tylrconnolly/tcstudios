@@ -14,6 +14,8 @@ body {
  background-position: center;
  }
 
+* {box-sizing:border-box}
+ 
 .slideshow-container {
  max-width: 100px;
  position: relative;
@@ -22,6 +24,21 @@ body {
 
 .mySlides {
  display:none;
+ }
+ 
+.prev, .next {
+ cursor: pointer;
+ position: absolute;
+ top: 50%
+ width: auto;
+ margin-top: -22px;
+ padding: 16px;
+ color: white;
+ font-weight: bold;
+ font-size: 18px;
+ transition: 0.6s ease;
+ border-radius: 0 3px 3px 0;
+ user-select:none;
  }
  
         
@@ -36,6 +53,27 @@ body {
    <img src="https://images.tech.co/wp-content/uploads/2019/12/19112253/future-gaming.jpg" style="width:100%">
    <div class="text">Caption One</div>
   </div>
+  
+   <div class="mySlides fade">
+   <img src="https://images.tech.co/wp-content/uploads/2019/12/19112253/future-gaming.jpg" style="width:100%">
+   <div class="text">Caption Two</div>
+  </div>
+  
+   <div class="mySlides fade">
+   <img src="https://images.tech.co/wp-content/uploads/2019/12/19112253/future-gaming.jpg" style="width:100%">
+   <div class="text">Caption Three</div>
+  </div>
+  
+   <div class="mySlides fade">
+   <img src="https://images.tech.co/wp-content/uploads/2019/12/19112253/future-gaming.jpg" style="width:100%">
+   <div class="text">Caption Four</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick=plusSlides(+1)">&#10095;</a>
+  </div>
+  <br>
+                                        
 
 
 
